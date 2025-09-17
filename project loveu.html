@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bí Mật Trong Anh</title>
+    <style>
+        /* Định dạng chung */
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #ffc0cb;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            flex-direction: column;
+            text-align: center;
+            color: #333;
+        }
+
+        h1 {
+            font-size: 3rem;
+            color: #ff5733;
+            margin-bottom: 20px;
+            animation: fadeIn 2s ease-out;
+        }
+
+        p {
+            font-size: 1.2rem;
+            margin-bottom: 20px;
+            color: #555;
+        }
+
+        /* Hiệu ứng fade-in */
+        @keyframes fadeIn {
+            0% { opacity: 0; }
+            100% { opacity: 1; }
+        }
+
+        /* Nút tỏ tình */
+        .button {
+            background-color: #ff5733;
+            color: white;
+            padding: 15px 30px;
+            font-size: 1.5rem;
+            border: none;
+            border-radius: 50px;
+            cursor: pointer;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            transition: background-color 0.3s;
+        }
+
+        .button:hover {
+            background-color: #e04f29;
+        }
+
+        /* Câu tỏ tình ẩn */
+        .hidden-message {
+            display: none;
+            font-size: 2rem;
+            color: #e04f29;
+            margin-top: 30px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Em à, có thể nghe anh nói một điều không?</h1>
+    <p>Có điều này anh muốn nói, nhưng không biết có đủ can đảm hay không...</p>
+    
+    <button class="button" onclick="showLoveMessage()">Nhấn để biết điều anh muốn nói...</button>
+
+    <p id="message" class="hidden-message">Anh yêu em rất nhiều!💖</p>
+
+    <script>
+        function showLoveMessage() {
+            // Lấy phần tử chứa thông điệp tỏ tình và hiển thị nó
+            var message = document.getElementById('message');
+            message.style.display = 'block';
+        }
+    </script>
+
+</body>
+</html>
