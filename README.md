@@ -72,7 +72,7 @@
     
     <button class="button" onclick="showLoveMessage()">Nhấn để biết điều anh muốn nói...</button>
     
-    <p id="message" class="hidden-message">Anh yêu em rất nhiều! 💖</p>
+    <p id="message" class="hidden-message">Anh yêu em rất nhiều! CHO ANH LÀM NHÁY NHÁ 💖 </p>
 
     <script>
         function showLoveMessage() {
